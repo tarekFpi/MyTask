@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_8sdp"
+    app:cardElevation="@dimen/_8sdp"
+    android:layout_margin="@dimen/_7sdp"
+    app:cardMaxElevation="@dimen/_8sdp"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:padding="@dimen/_8sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <LinearLayout
+            android:id="@+id/layout_id"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold"
+                android:id="@+id/text_taskName"
+                android:text="Name"/>
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:textStyle="bold"
+                android:id="@+id/text_taskspecies"
+                android:text="species"/>
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:textStyle="bold"
+                android:id="@+id/text_taskgender"
+                android:text="gender"/>
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:textStyle="bold"
+                android:id="@+id/text_taskhouse"
+                android:text="house"/>
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
