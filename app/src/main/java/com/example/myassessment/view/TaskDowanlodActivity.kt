@@ -2,22 +2,14 @@ package com.example.myassessment.view
 
 import android.annotation.SuppressLint
 import android.app.DownloadManager
-import android.app.NotificationManager
-import android.app.PendingIntent
 import android.app.ProgressDialog
 import android.content.Context
-import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.os.Environment
 import android.util.Log
-import android.view.View
-import android.widget.MediaController
 import android.widget.Toast
-import android.widget.VideoView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.app.NotificationCompat
-import com.example.myassessment.MainActivity
 import com.example.myassessment.R
 import com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.PlayerConstants
@@ -26,11 +18,6 @@ import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.listeners.Abs
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
-import java.io.File
-import java.io.FileOutputStream
-import java.io.IOException
-import java.net.HttpURLConnection
-import java.net.URL
 
 
 class TaskDowanlodActivity : AppCompatActivity() {
