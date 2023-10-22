@@ -96,7 +96,7 @@ class TaskDowanlodActivity : AppCompatActivity() {
             val request = DownloadManager.Request(Uri.parse(url))
             request.setAllowedNetworkTypes(DownloadManager.Request.NETWORK_WIFI or DownloadManager.Request.NETWORK_MOBILE)
             request.setTitle("Download")
-            request.setAllowedOverRoaming(false)
+            //request.setAllowedOverRoaming(false)
             request.setDescription("Downloading Your File")
             request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
             request.setDestinationInExternalPublicDir(

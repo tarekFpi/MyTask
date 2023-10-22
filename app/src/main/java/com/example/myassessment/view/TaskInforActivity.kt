@@ -1,9 +1,12 @@
 package com.example.myassessment.view
 
+import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageView
 import android.widget.TextView
 import com.example.myassessment.R
+import com.squareup.picasso.Picasso
 
 class TaskInforActivity : AppCompatActivity() {
 
@@ -15,6 +18,9 @@ class TaskInforActivity : AppCompatActivity() {
 
     private lateinit var textViewSpecies: TextView
 
+    private lateinit var imageView: ImageView
+
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_task_infor)
@@ -23,6 +29,8 @@ class TaskInforActivity : AppCompatActivity() {
         textViewGender =findViewById(R.id.text_infoGender)
         textViewHome =findViewById(R.id.text_infoHouse)
         textViewSpecies =findViewById(R.id.text_infoSpecies)
+
+        imageView =findViewById(R.id.taskInfoImage)
 
         var bundle :Bundle ?=intent.extras
 
@@ -35,6 +43,8 @@ class TaskInforActivity : AppCompatActivity() {
             textViewGender.text="Gender"+ bundle!!.getString("gender")!!.toString()
 
             textViewHome.text="House"+ bundle!!.getString("house")!!.toString()
+
+            Picasso.get().load(bundle!!.getString("image")).into(imageView)
 
         }
 

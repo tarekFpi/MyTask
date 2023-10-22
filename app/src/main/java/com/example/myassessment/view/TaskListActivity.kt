@@ -121,6 +121,7 @@ class TaskListActivity : AppCompatActivity() {
                                   intent.putExtra("species", it.data.get(position).species)
                                   intent.putExtra("gender", it.data.get(position).gender)
                                   intent.putExtra("house", it.data.get(position).house)
+                                  intent.putExtra("image", it.data.get(position).image)
                                   startActivity(intent)
 
                             }
