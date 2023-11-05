@@ -5,19 +5,17 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.animation.AnimationUtils
 import androidx.recyclerview.widget.RecyclerView
-import com.example.myassessment.R
 import com.example.myassessment.databinding.TaskLayoutBinding
-import com.example.myassessment.model.TaskResponseItem
+import com.example.myassessment.model.userlist.UserResponseItem
 
 
-class TaskListAdapter (private val context: Context,
- private var taskList: ArrayList<TaskResponseItem>): RecyclerView.Adapter<TaskListAdapter.MyviewHolder>() {
+class UserListAdapter (private val context: Context,
+                       private var userList: ArrayList<UserResponseItem>): RecyclerView.Adapter<UserListAdapter.MyviewHolder>() {
 
 
     private var listposition = -1
 
     private var clickLisiner: onItemClickLisiner? = null
-
 
     inner class MyviewHolder(val binding: TaskLayoutBinding) :View.OnClickListener, RecyclerView.ViewHolder(binding.root) {
 
@@ -47,31 +45,30 @@ class TaskListAdapter (private val context: Context,
         return MyviewHolder(binding)
     }
 
-    fun setTaskList(list: ArrayList<TaskResponseItem>) {
+    fun setUserList(list: ArrayList<UserResponseItem>) {
 
-        this.taskList =list
+        this.userList =list
         notifyDataSetChanged()
     }
 
-    fun filterdList(filterList: ArrayList<TaskResponseItem>) {
+    fun filterdList(filterList: ArrayList<UserResponseItem>) {
 
-        taskList = filterList
+        userList = filterList
 
         notifyDataSetChanged()
     }
 
 
-    override fun getItemCount(): Int = taskList.size
-
+    override fun getItemCount(): Int = userList.size
 
     override fun onBindViewHolder(holder: MyviewHolder, position: Int) {
 
-        val itemPosition =taskList.get(position)
+        val itemPosition =userList.get(position)
 
-        holder.binding.textTaskName.text ="Name:"+itemPosition.name
-        holder.binding.textTaskgender.text ="Gender:"+itemPosition.gender
-        holder.binding.textTaskhouse.text ="House:"+itemPosition.house
-        holder.binding.textTaskspecies.text ="Species:"+itemPosition.species
+        holder.binding.textTaskName.text ="currentPrice:"+itemPosition.currentPrice
+        holder.binding.textTaskgender.text ="digits:"+itemPosition.digits
+        holder.binding.textTaskhouse.text ="login:"+itemPosition.login
+        holder.binding.textTaskspecies.text ="openTime:"+itemPosition.openTime
 
         setAnimiton(holder.itemView, position)
     }
