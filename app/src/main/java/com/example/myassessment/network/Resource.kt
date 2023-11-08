@@ -1,7 +1,4 @@
-package com.example.myassessment.utils
-
-import com.example.myassessment.model.profile.ProfileResponse
-import com.example.myassessment.model.userlist.UserResponseItem
+package com.example.myassessment.network
 
 sealed class Resource<T>(val data: T? = null, val message: String? = null,) {
 

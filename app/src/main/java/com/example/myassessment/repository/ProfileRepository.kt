@@ -4,8 +4,8 @@ import androidx.lifecycle.MutableLiveData
 import com.example.myassessment.model.profile.ProfileRequest
 import com.example.myassessment.model.profile.ProfileResponse
 import com.example.myassessment.retrofit.ApiService
-import com.example.myassessment.utils.Resource
-import com.example.myassessment.utils.TokenManager
+import com.example.myassessment.network.Resource
+import com.example.myassessment.network.TokenManager
 import org.json.JSONObject
 import javax.inject.Inject
 
@@ -15,7 +15,7 @@ class ProfileRepository @Inject constructor(val apiService: ApiService,
 
     private var _profileResponseLiveData = MutableLiveData<Resource<ProfileResponse>>()
     val  profileResponseLiveData : MutableLiveData<Resource<ProfileResponse>>
-        get() =_profileResponseLiveData
+    get() =_profileResponseLiveData
 
 
     suspend  fun getProfileList(){

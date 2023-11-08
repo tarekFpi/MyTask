@@ -6,7 +6,7 @@ import androidx.lifecycle.viewModelScope
 import com.example.myassessment.model.auth.LoginResponse
 import com.example.myassessment.model.auth.UserRequest
 import com.example.myassessment.repository.AuthRepository
-import com.example.myassessment.utils.Resource
+import com.example.myassessment.network.Resource
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject

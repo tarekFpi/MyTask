@@ -1,4 +1,4 @@
-package com.example.myassessment.network
+package com.example.myassessment.di
 
 import com.example.myassessment.retrofit.ApiService
 import com.example.myassessment.utils.Constants

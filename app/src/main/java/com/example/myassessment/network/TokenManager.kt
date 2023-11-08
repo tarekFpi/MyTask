@@ -1,4 +1,4 @@
-package com.example.myassessment.utils
+package com.example.myassessment.network
 
 import android.content.Context
 import android.content.SharedPreferences

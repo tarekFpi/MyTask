@@ -20,7 +20,7 @@ import com.example.myassessment.R
 import com.example.myassessment.adapter.UserListAdapter
 import com.example.myassessment.model.userlist.UserResponseItem
 import com.example.myassessment.utils.CheckInternetConnection
-import com.example.myassessment.utils.Resource
+import com.example.myassessment.network.Resource
 import com.example.myassessment.viewmodel.UserListViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject

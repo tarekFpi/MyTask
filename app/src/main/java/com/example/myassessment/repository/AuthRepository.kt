@@ -5,8 +5,8 @@ import androidx.lifecycle.MutableLiveData
 import com.example.myassessment.model.auth.LoginResponse
 import com.example.myassessment.model.auth.UserRequest
 import com.example.myassessment.retrofit.ApiService
-import com.example.myassessment.utils.Resource
-import com.example.myassessment.utils.TokenManager
+import com.example.myassessment.network.Resource
+import com.example.myassessment.network.TokenManager
 import org.json.JSONObject
 
 import javax.inject.Inject

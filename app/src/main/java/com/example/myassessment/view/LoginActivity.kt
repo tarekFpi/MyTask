@@ -12,11 +12,10 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.myassessment.R
 import com.example.myassessment.model.auth.UserRequest
 import com.example.myassessment.utils.CheckInternetConnection
-import com.example.myassessment.utils.Resource
-import com.example.myassessment.utils.TokenManager
+import com.example.myassessment.network.Resource
+import com.example.myassessment.network.TokenManager
 import com.example.myassessment.viewmodel.AuthViewModel
 import dagger.hilt.android.AndroidEntryPoint
-import java.util.*
 import javax.inject.Inject
 
 @AndroidEntryPoint
@@ -93,7 +92,7 @@ class LoginActivity : AppCompatActivity() {
 
         }else if(editText_password.text.toString().isEmpty()){
 
-            editText_password.setError("Passwrod is Empty!!")
+            editText_password.setError("Password is Empty!!")
             editText_password.requestFocus()
 
         }else{
@@ -112,7 +111,9 @@ class LoginActivity : AppCompatActivity() {
 
         }
 
+
     }
+
 
    private fun  bindObservers(){
 

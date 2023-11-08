@@ -4,13 +4,14 @@ import androidx.lifecycle.MutableLiveData
 import com.example.myassessment.model.userlist.UserListRequest
 import com.example.myassessment.model.userlist.UserResponseItem
 import com.example.myassessment.retrofit.ApiService
-import com.example.myassessment.utils.Resource
-import com.example.myassessment.utils.TokenManager
+import com.example.myassessment.network.Resource
+import com.example.myassessment.network.TokenManager
 import org.json.JSONObject
 import javax.inject.Inject
 
 class UserListRepository @Inject constructor(val apiService: ApiService,
-                                             private val tokenManager: TokenManager){
+                                             private val tokenManager: TokenManager
+){
 
 
     private var _userlistResponseLiveData = MutableLiveData<Resource<List<UserResponseItem>>>()

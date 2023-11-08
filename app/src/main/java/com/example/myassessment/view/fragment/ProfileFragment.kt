@@ -11,15 +11,12 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.example.myassessment.R
 import com.example.myassessment.databinding.FragmentProfileBinding
 import com.example.myassessment.utils.CheckInternetConnection
-import com.example.myassessment.utils.Resource
-import com.example.myassessment.utils.TokenManager
-import com.example.myassessment.view.HomePageActivity
+import com.example.myassessment.network.Resource
+import com.example.myassessment.network.TokenManager
 import com.example.myassessment.view.LoginActivity
 import com.example.myassessment.viewmodel.ProfileViewModel
-import com.example.myassessment.viewmodel.UserListViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
